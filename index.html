@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Caderno de Caligrafia - Textos Sequeiciais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div>
+                <h1>📓 Meu Caderno</h1>
+                <p id="info-texto" style="font-size: 0.9rem; color: #bdc3c7;"></p>
+            </div>
+            <div class="controls">
+                <button onclick="carregarNovoTexto()" class="btn-new">Novo Texto</button>
+                <button onclick="limparEscrita()" class="btn-clear">Limpar</button>
+            </div>
+        </header>
+
+        <div class="canvas-container">
+            <canvas id="notebookCanvas"></canvas>
+        </div>
+    </div>
+
+    <script src="bancodedados.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

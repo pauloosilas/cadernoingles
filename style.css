@@ -1,0 +1,30 @@
+body {
+    background-color: #d1d8e0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0; padding: 20px;
+    display: flex; justify-content: center;
+}
+
+.container { width: 100%; max-width: 900px; }
+
+header {
+    background: #2c3e50; color: white;
+    padding: 15px 20px; border-radius: 10px 10px 0 0;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+h1 { margin: 0; font-size: 1.5rem; }
+
+.btn-new { background: #27ae60; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+.btn-clear { background: #e74c3c; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-left: 5px;}
+
+.canvas-container {
+    background: white; height: 75vh;
+    overflow-y: auto; border: 1px solid #bdc3c7;
+    border-radius: 0 0 10px 10px;
+}
+
+canvas {
+    display: block; background-color: #fffef0;
+    touch-action: none;
+}
