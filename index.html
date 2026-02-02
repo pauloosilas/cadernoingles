@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Caderno de Caligrafia - Textos Sequeiciais</title>
+    <title>Meu Caderno de Caligrafia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
-        <header>
+        <header id="main-header">
             <div>
                 <h1>📓 Meu Caderno</h1>
-                <p id="info-texto" style="font-size: 0.9rem; color: #bdc3c7;"></p>
+                <p id="info-texto"></p>
             </div>
             <div class="controls">
                 <button onclick="carregarNovoTexto()" class="btn-new">Novo Texto</button>
@@ -20,9 +20,7 @@
             </div>
         </header>
 
-        <div class="canvas-container">
-            <canvas id="notebookCanvas"></canvas>
-        </div>
+        <canvas id="notebookCanvas"></canvas>
     </div>
 
     <script src="bancodedados.js"></script>
