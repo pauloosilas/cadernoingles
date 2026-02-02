@@ -1,4 +1,83 @@
 const basededados = {
+
+    "halloween_sleepover": [
+    {
+        frase_pt: "Lena estava muito animada para a festa do pijama de Halloween na casa da amiga Zoe.",
+        frase_en: "Lena was stoked for the Halloween sleepover at her friend Zoe’s house.",
+        explanation: "'Was stoked' is an informal expression meaning very excited."
+    },
+    {
+        frase_pt: "Zoe era conhecida por suas decorações assustadoras e estilo ousado.",
+        frase_en: "Zoe was known for her spooky decorations and edgy style.",
+        explanation: "'Edgy style' refers to a bold or unconventional style."
+    },
+    {
+        frase_pt: "O quarto dela tinha luzes fracas, cortinas pretas e pôsteres de filmes de terror.",
+        frase_en: "Her room had dim lights, black curtains, and posters of horror movies.",
+        explanation: "'Dim lights' describes low or soft lighting."
+    },
+    {
+        frase_pt: "Definitivamente não era um lugar para alguém sensível ou facilmente assustado.",
+        frase_en: "Definitely not for someone touchy or easily scared.",
+        explanation: "'Touchy' means emotionally sensitive."
+    },
+    {
+        frase_pt: "Elas assistiram a um filme de terror bobo que era mais engraçado do que assustador.",
+        frase_en: "They watched a cheesy horror film that was more corny than creepy.",
+        explanation: "'Cheesy' and 'corny' describe something silly or not serious."
+    },
+    {
+        frase_pt: "Mesmo assim, todo mundo gritava nos sustos falsos.",
+        frase_en: "But everyone still screamed at the fake jump scares.",
+        explanation: "'Jump scares' are sudden moments meant to frighten viewers."
+    },
+    {
+        frase_pt: "Uma garota ficou chateada quando sua fantasia rasgou.",
+        frase_en: "One girl got bummed when her costume ripped.",
+        explanation: "'Got bummed' means became sad or disappointed."
+    },
+    {
+        frase_pt: "Mas Zoe, sempre esperta, consertou com fita e estilo.",
+        frase_en: "But Zoe, always savvy, fixed it with tape and style.",
+        explanation: "'Savvy' means clever or resourceful."
+    },
+    {
+        frase_pt: "Mais tarde, elas se sentaram em um forte aconchegante feito de cobertores, compartilhando histórias.",
+        frase_en: "Later, they sat in a snug blanket fort, sharing stories.",
+        explanation: "'Blanket fort' is a playful structure made from blankets."
+    },
+    {
+        frase_pt: "Algumas histórias eram bobas, enquanto outras tinham um toque sombrio que deixava todos nervosos.",
+        frase_en: "Some were goofy, while others had a shady twist that made everyone nervous.",
+        explanation: "'Shady twist' suggests something suspicious or dark."
+    },
+    {
+        frase_pt: "Zoe falou sobre as esquisitices de sua casa antiga.",
+        frase_en: "Zoe talked about the quirks of her old house.",
+        explanation: "'Quirks' are unusual or odd characteristics."
+    },
+    {
+        frase_pt: "Como uma porta que se abria sozinha.",
+        frase_en: "Like a door that opened by itself.",
+        explanation: "'By itself' means without anyone touching it."
+    },
+    {
+        frase_pt: "O grupo riu, embora algumas garotas tenham ficado estranhas quando as luzes piscaram.",
+        frase_en: "The group laughed, though a few girls felt moody after the lights flickered.",
+        explanation: "'Felt moody' means feeling uneasy or emotionally off."
+    },
+    {
+        frase_pt: "Apesar do clima assustador, a noite foi cheia de diversão e coisas estranhas.",
+        frase_en: "Despite the spooky vibes, the night was full of quirkiness and fun.",
+        explanation: "'Spooky vibes' refers to a scary or eerie atmosphere."
+    },
+    {
+        frase_pt: "Até os jogos sem graça pareciam emocionantes quando compartilhados com amigos.",
+        frase_en: "Even the lame games felt exciting when shared with friends.",
+        explanation: "'Lame' means boring or unimpressive."
+    }
+],
+
     "decisoes_que_mudam_a_vida": [
     {
         frase_pt: "Chegar a esse ponto da vida exigiu coragem e reflexão.",
