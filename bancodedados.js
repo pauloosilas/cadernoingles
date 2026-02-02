@@ -1,4 +1,86 @@
 const basededados = {
+    "decisoes_que_mudam_a_vida": [
+    {
+        frase_pt: "Chegar a esse ponto da vida exigiu coragem e reflexão.",
+        frase_en: "Reaching this point in life required courage and reflection.",
+        explanation: "'Reaching' is a gerund used as the subject of the sentence."
+    },
+    {
+        frase_pt: "Nem todas as decisões foram fáceis de tomar.",
+        frase_en: "Not all decisions were easy to make.",
+        explanation: "Passive meaning expressed with 'easy to make'."
+    },
+    {
+        frase_pt: "Algumas escolhas tiveram consequências inesperadas.",
+        frase_en: "Some choices had unexpected consequences.",
+        explanation: "'Unexpected consequences' is a common advanced collocation."
+    },
+    {
+        frase_pt: "Ao olhar para trás, ele percebeu o quanto havia aprendido.",
+        frase_en: "Looking back, he realized how much he had learned.",
+        explanation: "Present participle clause used to give context."
+    },
+    {
+        frase_pt: "A experiência o ensinou a lidar melhor com a incerteza.",
+        frase_en: "Experience taught him how to deal better with uncertainty.",
+        explanation: "'Taught him how to' shows learning through experience."
+    },
+    {
+        frase_pt: "Em vez de evitar riscos, ele passou a avaliá-los com cuidado.",
+        frase_en: "Instead of avoiding risks, he began to assess them carefully.",
+        explanation: "'Instead of' is followed by a gerund."
+    },
+    {
+        frase_pt: "Com o tempo, sua confiança foi construída de forma gradual.",
+        frase_en: "Over time, his confidence was built gradually.",
+        explanation: "Passive voice emphasizes the process, not the agent."
+    },
+    {
+        frase_pt: "Ele entendeu que falhar faz parte do crescimento.",
+        frase_en: "He understood that failing is part of growth.",
+        explanation: "Gerund 'failing' used as a noun."
+    },
+    {
+        frase_pt: "Nem sempre os resultados aparecem imediatamente.",
+        frase_en: "Results do not always appear immediately.",
+        explanation: "Adverb placement with 'not always'."
+    },
+    {
+        frase_pt: "Apesar disso, a persistência fez toda a diferença.",
+        frase_en: "Nevertheless, persistence made all the difference.",
+        explanation: "'Made all the difference' is an idiomatic expression."
+    },
+    {
+        frase_pt: "Ele passou a valorizar mais o processo do que o resultado final.",
+        frase_en: "He came to value the process more than the final outcome.",
+        explanation: "'Came to' indicates a gradual change in attitude."
+    },
+    {
+        frase_pt: "Essa mudança de perspectiva influenciou suas decisões futuras.",
+        frase_en: "This shift in perspective influenced his future decisions.",
+        explanation: "'Shift in perspective' is a higher-level abstract expression."
+    },
+    {
+        frase_pt: "Ao assumir responsabilidade por suas escolhas, ele amadureceu.",
+        frase_en: "By taking responsibility for his choices, he matured.",
+        explanation: "'By + gerund' shows cause or method."
+    },
+    {
+        frase_pt: "Ele percebeu que controle total é apenas uma ilusão.",
+        frase_en: "He realized that total control is merely an illusion.",
+        explanation: "'Merely' adds emphasis and nuance."
+    },
+    {
+        frase_pt: "Aceitar isso trouxe mais equilíbrio à sua vida.",
+        frase_en: "Accepting this brought more balance to his life.",
+        explanation: "Gerund phrase acting as the subject."
+    },
+    {
+        frase_pt: "No fim das contas, crescer significou aprender a se adaptar.",
+        frase_en: "In the end, growing meant learning how to adapt.",
+        explanation: "'In the end' summarizes a conclusion or realization."
+    }
+],
   "titulodotexto": [
     { 
         frase_pt: "Lucas era um estudante que queria melhorar seu inglês.", 
