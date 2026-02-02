@@ -1,5 +1,93 @@
 const basededados = {
 
+    "a_day_in_the_city": [
+    {
+        frase_pt: "A cidade estava cheia de energia, com uma mistura de lojas excêntricas e cafés modernos ao longo das ruas.",
+        frase_en: "The city was full of energy, with a mix of quirky shops and sleek cafés lining the streets.",
+        explanation: "'Quirky' means unusual in a charming way; 'sleek' suggests modern and stylish."
+    },
+    {
+        frase_pt: "Mia passou por uma padaria elegante, tentada pelo cheiro de pão fresco.",
+        frase_en: "Mia walked past a fancy bakery, tempted by the smell of fresh bread.",
+        explanation: "'Tempted by' indicates attraction or desire caused by something."
+    },
+    {
+        frase_pt: "Ela adorava a atmosfera acolhedora do bairro.",
+        frase_en: "She loved the wholesome atmosphere of the neighborhood.",
+        explanation: "'Wholesome' refers to something pleasant, safe, and comforting."
+    },
+    {
+        frase_pt: "Mesmo que alguns cantos parecessem um pouco suspeitos.",
+        frase_en: "Even if some corners felt a bit dodgy.",
+        explanation: "'Dodgy' is informal and means unsafe or untrustworthy."
+    },
+    {
+        frase_pt: "Seu amigo Jake era um cara direto.",
+        frase_en: "Her friend Jake was a blunt guy.",
+        explanation: "'Blunt' describes someone very direct, sometimes too honest."
+    },
+    {
+        frase_pt: "Ele nunca tinha medo de falar o que pensava.",
+        frase_en: "He was never afraid to speak his mind.",
+        explanation: "'Speak his mind' is an idiom meaning to say what one really thinks."
+    },
+    {
+        frase_pt: "Eles estavam planejando encontrar um artista criativo.",
+        frase_en: "They were planning to meet a crafty artist.",
+        explanation: "'Crafty' here means skillful and creative."
+    },
+    {
+        frase_pt: "Esse artista criava murais urbanos intensos em prédios abandonados.",
+        frase_en: "He created gritty street murals in abandoned buildings.",
+        explanation: "'Gritty' suggests a raw, rough, realistic style."
+    },
+    {
+        frase_pt: "A área era conhecida por seu clima melancólico.",
+        frase_en: "The area was known for its moody vibe.",
+        explanation: "'Moody vibe' refers to a dark or emotional atmosphere."
+    },
+    {
+        frase_pt: "Mas Jake disse que isso adicionava personalidade ao lugar.",
+        frase_en: "But Jake said it added character.",
+        explanation: "'Added character' means it made the place more interesting or unique."
+    },
+    {
+        frase_pt: "Na exposição de arte, eles conheceram uma dançarina atrevida.",
+        frase_en: "At the art show, they met a sassy dancer.",
+        explanation: "'Sassy' describes someone bold, lively, and confident."
+    },
+    {
+        frase_pt: "Ela fez todo o lugar parecer animado e divertido.",
+        frase_en: "She made the whole place feel rowdy and fun.",
+        explanation: "'Rowdy' means loud, energetic, and slightly chaotic."
+    },
+    {
+        frase_pt: "Mia, normalmente exigente com multidões, se sentiu estranhamente relaxada.",
+        frase_en: "Mia, usually picky about crowds, felt oddly relaxed.",
+        explanation: "'Picky about' means very selective or hard to please."
+    },
+    {
+        frase_pt: "A música era tranquila e as pessoas eram amigáveis.",
+        frase_en: "The music was chill, and the people were friendly.",
+        explanation: "'Chill' is informal and means calm or relaxing."
+    },
+    {
+        frase_pt: "Mesmo que algumas parecessem um pouco perdidas em relação à arte.",
+        frase_en: "Even if some looked a little clueless about the art.",
+        explanation: "'Clueless' means lacking understanding or awareness."
+    },
+    {
+        frase_pt: "Mais tarde, eles pararam em um café flexível que permitia a entrada de animais.",
+        frase_en: "Later, they stopped at a lenient café that allowed people to bring their pets.",
+        explanation: "'Lenient' means permissive or not strict."
+    },
+    {
+        frase_pt: "Mia sorriu, pensando em como o dia tinha sido estranho e maravilhoso.",
+        frase_en: "Mia smiled, thinking how strange yet wonderful the day had been.",
+        explanation: "'Yet' is used to contrast two opposing qualities."
+    }
+],
+
     "halloween_sleepover": [
     {
         frase_pt: "Lena estava muito animada para a festa do pijama de Halloween na casa da amiga Zoe.",
