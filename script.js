@@ -4,22 +4,56 @@ const infoTexto = document.getElementById('info-texto');
 
 let desenhando = false;
 let frasesAtuais = [];
+let indiceTextoAtual = 0; // Começa no primeiro (índice 0)
 
-// Configurações visuais
 const paddingEsquerdo = 60;
 const paddingDireito = 40;
-const espacamentoEntreBlocos = 80; // Espaço entre o fim de uma frase e o início da outra
-const alturaLinhaEscrita = 55; // Espaço vertical entre linhas da mesma frase (quebra de linha)
+const espacamentoEntreBlocos = 80;
+const alturaLinhaEscrita = 55;
 
-function carregarNovoTexto() {
+// Função para iniciar o app
+function iniciarApp() {
     const chaves = Object.keys(basededados);
-    const textoSelecionado = chaves[Math.floor(Math.random() * chaves.length)];
-    frasesAtuais = basededados[textoSelecionado];
+    const textoChave = chaves[indiceTextoAtual];
+    frasesAtuais = basededados[textoChave];
     
-    infoTexto.innerText = `TEXTO ATUAL: ${textoSelecionado.toUpperCase()}`;
+    infoTexto.innerText = `TEXTO: ${indiceTextoAtual + 1} de ${chaves.length} (${textoChave.toUpperCase()})`;
     
     ajustarTela();
 }
+
+// Função para o botão "Próximo Texto"
+function carregarProximoTexto() {
+    const chaves = Object.keys(basededados);
+    
+    // Incrementa o índice
+    indiceTextoAtual++;
+    
+    // Se passar do limite, volta para o primeiro (0)
+    if (indiceTextoAtual >= chaves.length) {
+        indiceTextoAtual = 0;
+    }
+    
+    const textoChave = chaves[indiceTextoAtual];
+    frasesAtuais = basededados[textoChave];
+    
+    infoTexto.innerText = `TEXTO: ${indiceTextoAtual + 1} de ${chaves.length} (${textoChave.toUpperCase()})`;
+    
+    // Rola a página para o topo automaticamente ao trocar de texto
+    window.scrollTo(0, 0);
+    
+    ajustarTela();
+}
+
+// --- Mantenha a função ajustarTela(), desenharTemplate() e desenharTextoComQuebra() anteriores ---
+// ...
+
+// Atualize o window.onload para chamar a nova função inicial
+window.onload = iniciarApp;
+window.onresize = ajustarTela;
+
+// --- Mantenha o restante da lógica de desenho (obterXY, iniciar, desenhar) ---
+
 
 // Função para desenhar texto com quebra de linha e retornar a posição Y final
 function desenharTextoComQuebra(ctx, text, x, y, maxWidth, lineHeight, isEnglish) {
