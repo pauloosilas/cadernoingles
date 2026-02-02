@@ -102,72 +102,110 @@ function desenharLinhaGuia(y) {
     ctx.restore();
 }
 
+// ... (mantenha as variáveis e a função desenharTextoComQuebra anteriores)
+
 function ajustarTela() {
+    if (frasesAtuais.length === 0) return;
+
     canvas.width = window.innerWidth > 900 ? 900 : window.innerWidth;
-    
-    // Simulação rápida para calcular a altura total do canvas antes de desenhar
-    // Isso evita que o caderno fique curto demais
-    let alturaCalculada = 100;
     const larguraMax = canvas.width - paddingEsquerdo - paddingDireito;
     
+    let alturaCalculada = 150; // Margem inicial
+
+    // 1. Calcula altura das frases
     frasesAtuais.forEach(item => {
         ctx.font = "bold 40px 'Courier New', monospace";
-        // Medimos quantas linhas o texto em inglês ocupará
-        const words = item.frase_en.split(' ');
-        let line = '';
-        let linhasCount = 1;
-        for (let n = 0; n < words.length; n++) {
-            let testLine = line + words[n] + ' ';
-            if (ctx.measureText(testLine).width > larguraMax && n > 0) {
-                line = words[n] + ' ';
-                linhasCount++;
-            } else { line = testLine; }
-        }
-        alturaCalculada += (linhasCount * alturaLinhaEscrita) + espacamentoEntreBlocos;
+        const linhasEn = contarLinhas(item.frase_en, larguraMax);
+        alturaCalculada += (linhasEn * alturaLinhaEscrita) + espacamentoEntreBlocos;
     });
 
-    canvas.height = alturaCalculada;
+    // 2. Adiciona espaço para o título das Explicações
+    alturaCalculada += 60;
+
+    // 3. Calcula altura das Explicações (Notas)
+    ctx.font = "italic 18px Arial";
+    frasesAtuais.forEach(item => {
+        if(item.explanation) {
+            const linhasExp = contarLinhas(item.explanation, larguraMax);
+            alturaCalculada += (linhasExp * 25) + 15; // 25px é o lineHeight das notas
+        }
+    });
+
+    canvas.height = alturaCalculada + 100; // Respiro no final
     desenharTemplate();
+}
+
+// Função auxiliar para ajudar no cálculo de altura
+function contarLinhas(texto, larguraMax) {
+    const words = texto.split(' ');
+    let line = '';
+    let count = 1;
+    for (let n = 0; n < words.length; n++) {
+        let testLine = line + words[n] + ' ';
+        if (ctx.measureText(testLine).width > larguraMax && n > 0) {
+            line = words[n] + ' ';
+            count++;
+        } else { line = testLine; }
+    }
+    return count;
 }
 
 function desenharTemplate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
-    // 1. Linhas de Fundo (Estética de caderno)
+    // --- Linhas de Fundo e Margem (Padrão) ---
     ctx.strokeStyle = "#e8eef2";
-    ctx.lineWidth = 1;
     for (let i = 0; i < canvas.height; i += 37) {
         ctx.beginPath(); ctx.moveTo(0, i); ctx.lineTo(canvas.width, i); ctx.stroke();
     }
+    ctx.strokeStyle = "#fab1a0"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(paddingEsquerdo - 20, 0); ctx.lineTo(paddingEsquerdo - 20, canvas.height); ctx.stroke();
 
-    // 2. Margem Lateral Vermelha
-    ctx.strokeStyle = "#fab1a0";
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(paddingEsquerdo - 20, 0); ctx.lineTo(paddingEsquerdo - 20, canvas.height);
-    ctx.stroke();
-
-    // 3. Renderizar Frases
     let yAtual = 100;
     const larguraMax = canvas.width - paddingEsquerdo - paddingDireito;
 
+    // --- Parte 1: Frases para praticar ---
     frasesAtuais.forEach((item, index) => {
-        // Desenha Português (Referência)
         ctx.font = "italic 16px Arial";
         ctx.fillStyle = "#95a5a6";
         ctx.fillText(`${index + 1}. ${item.frase_pt}`, paddingEsquerdo, yAtual - 55);
 
-        // Desenha Inglês com quebra automática
         ctx.font = "bold 40px 'Courier New', monospace";
         ctx.fillStyle = "rgba(0, 0, 0, 0.08)";
-        
-        // A função desenharTextoComQuebra agora faz o trabalho pesado
         yAtual = desenharTextoComQuebra(ctx, item.frase_en, paddingEsquerdo, yAtual, larguraMax, alturaLinhaEscrita, true);
 
-        // Pula para o próximo bloco de frase
         yAtual += espacamentoEntreBlocos;
     });
+
+    // --- Parte 2: Seção de Explicações ---
+    yAtual -= 20; // Ajuste de posição
+    ctx.strokeStyle = "#1a237e";
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.moveTo(paddingEsquerdo, yAtual);
+    ctx.lineTo(canvas.width - paddingDireito, yAtual);
+    ctx.stroke();
+
+    yAtual += 40;
+    ctx.font = "bold 22px Arial";
+    ctx.fillStyle = "#1a237e";
+    ctx.fillText("NOTAS E EXPLICAÇÕES:", paddingEsquerdo, yAtual);
+
+    yAtual += 40;
+    ctx.font = "italic 18px Arial";
+    ctx.fillStyle = "#1a237e"; // Azul escuro solicitado
+
+    frasesAtuais.forEach((item, index) => {
+        if (item.explanation) {
+            const textoExplicacao = `• Frase ${index + 1}: ${item.explanation}`;
+            // Reutilizamos a função de quebra, mas com lineHeight menor (25) e sem linhas de caderno (false)
+            yAtual = desenharTextoComQuebra(ctx, textoExplicacao, paddingEsquerdo, yAtual, larguraMax, 25, false);
+            yAtual += 15; // Espaço entre explicações
+        }
+    });
 }
+
+
 
 // --- LÓGICA DE DESENHO (MANTIDA) ---
 function obterXY(e) {
