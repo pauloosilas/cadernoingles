@@ -1,5 +1,82 @@
 const basededados = {
 
+    "cultural_appropriation_halloween": [
+    {
+        frase_pt: "Glory Ames, da reserva White Earth, está frustrada porque, apesar da presença de várias reservas indígenas perto de Moorhead, as lojas locais de Halloween ainda apresentam uma seção temática do Velho Oeste com fantasias como \"princesa do pow wow\".",
+        frase_en: "Glory Ames, from the White Earth reservation, is frustrated that despite the presence of several indigenous reservations near Moorhead, local Halloween stores still feature a western section with costumes such as pow wow princess.",
+        explanation: "'Despite' significa 'apesar de' e indica contraste. 'Feature' aqui significa 'apresentar/oferecer'."
+    },
+    {
+        frase_pt: "Pior ainda, apesar de um longo debate sobre racismo e apropriação cultural, frequentemente motivado por críticas contra celebridades e políticos por usarem fantasias ofensivas, as pessoas continuam usando esse tipo de fantasia.",
+        frase_en: "Even worse, despite a long-running debate about racism and cultural appropriation, often prompted by backlash against celebrities and politicians for donning offensive costumes, people continue to wear such costumes.",
+        explanation: "'Even worse' intensifica a crítica. 'Long-running debate' indica algo que ocorre há muito tempo. 'Backlash' significa reação negativa pública. 'Donning' é forma mais formal de 'wearing'."
+    },
+    {
+        frase_pt: "No último Halloween, Ames viu uma foto no Instagram de uma garota vestida como uma nativa americana com uma bala na testa.",
+        frase_en: "Last Halloween, Ames spotted a photo on Instagram of a girl dressed as a Native American with a bullet in her forehead.",
+        explanation: "'Spotted' significa 'avistou/percebeu rapidamente'. 'Dressed as' significa 'fantasiada de'."
+    },
+    {
+        frase_pt: "Ela imediatamente denunciou a imagem à plataforma de mídia social e conseguiu que ela fosse removida.",
+        frase_en: "She immediately reported it to the social media platform and had it removed.",
+        explanation: "'Reported' significa 'denunciou'. A estrutura 'had it removed' é causativa, indicando que ela fez com que algo fosse removido."
+    },
+    {
+        frase_pt: "Eles descaradamente pegam certos aspectos da nossa cultura, raça e religião, usam para sua própria vantagem e ignoram as pessoas que vivem essa realidade, disse Ames.",
+        frase_en: "They blatantly take certain aspects of our culture, race, religion, and use it for their advantage and ignore the people living it, said Ames.",
+        explanation: "'Blatantly' significa 'de forma descarada/evidente'. 'For their advantage' indica benefício próprio. 'Living it' refere-se às pessoas que realmente vivenciam essa cultura."
+    }
+],
+
+"philosophy_and_proper_living": [
+    {
+        frase_pt: "Minha ideia de filosofia é que, se ela não for relevante para os problemas humanos,",
+        frase_en: "My idea of philosophy is that if it is not relevant to human problems,",
+        explanation: "Estrutura condicional com 'if' (se). 'Relevant to' significa 'relevante para'."
+    },
+    {
+        frase_pt: "se ela não nos disser como podemos erradicar parte da miséria neste mundo,",
+        frase_en: "if it does not tell us how we can go about eradicating some of the misery in this world,",
+        explanation: "'Go about + gerúndio' significa 'tratar de / começar a fazer algo'. 'Eradicating' = erradicar completamente."
+    },
+    {
+        frase_pt: "então não merece o nome de filosofia.",
+        frase_en: "then it is not worth the name of philosophy.",
+        explanation: "'Not worth the name' significa 'não merece ser chamado de'."
+    },
+    {
+        frase_pt: "Eu acho que Sócrates fez uma afirmação muito profunda",
+        frase_en: "I think Socrates made a very profound statement",
+        explanation: "'Profound statement' significa 'afirmação profunda', com grande significado."
+    },
+    {
+        frase_pt: "quando afirmou que a filosofia deve nos ensinar a viver corretamente.",
+        frase_en: "when he asserted that philosophy is to teach us proper living.",
+        explanation: "'Asserted' é mais formal que 'said', significa 'afirmou com convicção'. 'Proper living' = viver corretamente/adequadamente."
+    },
+    {
+        frase_pt: "Nos dias de hoje, 'viver corretamente' significa libertação",
+        frase_en: "In this day and age, 'proper living' means liberation",
+        explanation: "'In this day and age' é expressão idiomática que significa 'nos dias de hoje'."
+    },
+    {
+        frase_pt: "dos problemas urgentes da pobreza,",
+        frase_en: "from the urgent problems of poverty,",
+        explanation: "'Liberation from' significa 'libertação de'."
+    },
+    {
+        frase_pt: "da necessidade econômica e da doutrinação,",
+        frase_en: "economic necessity and indoctrination,",
+        explanation: "'Indoctrination' significa imposição de ideias sem pensamento crítico."
+    },
+    {
+        frase_pt: "da opressão mental.",
+        frase_en: "mental oppression.",
+        explanation: "'Oppression' significa opressão ou dominação injusta."
+    }
+],
+
+
     "a_day_in_the_city": [
     {
         frase_pt: "A cidade estava cheia de energia, com uma mistura de lojas excêntricas e cafés modernos ao longo das ruas.",
